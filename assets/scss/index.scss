@@ -99,50 +99,177 @@
     top: 0;
     object-fit: cover;
 }
-
-.detail-car {
-    width: 100%;
-    // height: calc(100vh - 46px);
-    position: relative;
-    background-color: rgba(240, 255, 255, 0);
-}
-
-.image-car-area {
-    height: calc(100vh - 0px);
-    width: 100%;
+.car-detail {
+    height: calc(100vh - 46px);
     display: flex;
     align-items: center;
-    // background-image: url(../images/bg-model.jpg);
     background-color: #f7f7f7;
-    background-repeat: no-repeat;
-    top: 0;
-    left: 0;
-    position: sticky;
 }
-
-.content-car-area {
+.list-img-model {
+    margin-bottom: 30px;
+    position: relative;
+}
+.hidden-logo {
+    position: absolute;
+    width: 100%;
+    height: 28px;
+    background-color: #f7f7f7;
+    top: 0;
+}
+.car-slide-container {
+    width: 60%;
+}
+#slider-container {
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+}
+.mark {
+    position: absolute;
+    top: -50%;
+    p {
+        font-size: 15px;
+        margin-bottom: 0;
+    }
+    padding: 4px 8px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(105, 105, 105);
+    // box-shadow: 0 0 4px 0 rgba(0, 0, 0, 1);
+    border-radius: 8px;
+    &::after {
+        content: "";
+        width: 0;
+        height: 0;
+        border-top: 10px solid rgb(105, 105, 105);
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 100%;
+    }
+    cursor: pointer;
+}
+.mark-1 {
+    left: 0;
+    transform: translateX(-50%);
+}
+.mark-2 {
+    left: 19%;
+    transform: translateX(-50%);
+}
+.mark-3 {
+    left: 40%;
+    transform: translateX(-50%);
+}
+.mark-4 {
+    left: 65%;
+    transform: translateX(-50%);
+}
+.input-range {
+    width: 600px;
     position: relative;
     z-index: 5;
-    // left: 10%;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: end;
 }
-.card-content {
-    border-radius: 8px;
-    border: 1px solid white;
-    background-color: #ffffff;
 
-    padding: 30px;
-    max-width: 500px;
-    margin-bottom: 50vh;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+input[type="range"] {
+    -webkit-appearance: none;
+    margin: 20px 0;
 }
-.fake-div {
+input[type="range"]:focus {
+    outline: none;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+    height: 4px;
+    cursor: pointer;
+    animate: 0.2s;
+    background: #414141b2;
+    border-radius: 25px;
+}
+input[type="range"]::-webkit-slider-thumb {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 1);
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -8px;
+}
+input[type="range"]:focus::-webkit-slider-runnable-track {
+    background: #c6180f;
+}
+
+/// ALERT
+///
+///
+:root {
+    --background: 255, 50, 50;
+    --size: 3rem;
+    --duration: 2s;
+    --scale: 3;
+    --opacity: 0.4;
+}
+
+.status__icon {
+    width: var(--size);
+    height: var(--size);
+    background: rgb(255, 50, 50);
+    border-radius: 100%;
+    position: absolute;
+    animation: pulse-shadow var(--duration) calc(2 * var(--duration) / 3) linear infinite;
+    cursor: pointer;
+    display: none;
+}
+.status__icon.show {
+    display: block;
+}
+.status__icon::after,
+.status__icon::before {
+    content: "";
     width: 100%;
-    height: 1000px;
+    height: 100%;
+    position: absolute;
+    background: rgb(255, 50, 50);
+    border-radius: 100%;
+    left: 0;
 }
+
+.status__icon:after {
+    animation: pulse var(--duration) linear infinite;
+}
+
+.status__icon:before {
+    animation: pulse var(--duration) calc(var(--duration) / 3) linear infinite;
+}
+
+.for-mark-1 {
+    left: 28%;
+    top: 38%;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: var(--opacity);
+    }
+
+    100% {
+        transform: scale(var(--scale));
+        opacity: 0;
+    }
+}
+
+@keyframes pulse-shadow {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 50, 50, var(--opacity));
+    }
+
+    100% {
+        box-shadow: 0 0 0 calc((var(--scale) - 1) * var(--size) / 2) rgba(255, 50, 50, 0);
+    }
+}
+
 @media (min-width: 577px) {
     .mobile {
         // display: none !important;
