@@ -1,230 +1,403 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 
-    <!-- Core stylesheet -->
-    <link type="text/css" rel="stylesheet" href="assets/css/fontawesome.min.css" />
-    <link type="text/css" rel="stylesheet" href="assets/css/general_v2_min.css" />
-    <link type="text/css" rel="stylesheet" href="assets/css/global.css" />
-    <link type="text/css" rel="stylesheet" href="assets/css/style.css" />
-    <link type="text/css" rel="stylesheet" href="assets/css/animate-v4.min.css" />
-    <link type="text/css" rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
-    <link type="text/css" rel="stylesheet" href="assets/css/aos.css" />
-    <link type="text/css" rel="stylesheet" href="assets/css/main.css" />
-    <!-- End stylesheet -->
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 
-    <title>Nhớ sửa title nhé</title>
-  </head>
+  <!-- Core stylesheet -->
+  <link type="text/css" rel="stylesheet" href="assets/css/fontawesome.min.css" />
+  <link type="text/css" rel="stylesheet" href="assets/css/general_v2_min.css" />
+  <link type="text/css" rel="stylesheet" href="assets/css/global.css" />
+  <link type="text/css" rel="stylesheet" href="assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="assets/css/animate-v4.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="assets/css/aos.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link type="text/css" rel="stylesheet" href="assets/css/main.css" />
+  <!-- End stylesheet -->
 
-  <body>
-    <!-- Document Warpper -->
-    <div id="warpper" class="clearfix">
-      <!-- Top Nav -->
-      <div id="topbar" class="topbar fixed-top clearfix nav-down">
-        <div class="container">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=""><span class="sr-only">Toggle navigation</span><span class="toggle-icon"></span></button>
-          <a href="https://vnexpress.net/" class="logo" id="logo"><img src="assets/images/logo-150x29.png" alt="VnExpress" class="pc-only img-100" /></a>
-          <div class="block-right">
-            <a href="#box_comment" class="button-comments count_comment" data-target="">
-              <i class="fas fa-comment"></i>
-              <span class="counter">Bình luận</span>
-            </a>
-            <ul class="list-inline social">
-              <li>
-                <a href="javascript:void(0);" class="si-facebook shape-circle social-item fb_share" data-type="fb_share"><i class="fab fa-facebook-f"></i></a>
-              </li>
-              <li>
-                <a href="javascript:void(0);" class="si-twitter shape-circle social-item tw_share" data-type="tw_share"><i class="fab fa-twitter"></i></a>
-              </li>
-            </ul>
-            <form action="https://timkiem.vnexpress.net/" method="get" class="block-right">
-              <div class="search">
-                <input autocomplete="off" type="text" class="search-input" placeholder="Tìm kiếm" maxlength="80" name="q" />
-                <span class="search-btn">
-                  <button type="submit">
-                    <i class="fas fa-search"></i>
-                  </button>
-                </span>
-              </div>
-            </form>
-          </div>
+  <title>Nhớ sửa title nhé</title>
+</head>
+
+<body>
+  <!-- Document Warpper -->
+  <div id="warpper" class="clearfix">
+    <!-- Top Nav -->
+    <div id="topbar" class="topbar fixed-top clearfix nav-down">
+      <div class="container">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=""><span class="sr-only">Toggle navigation</span><span class="toggle-icon"></span></button>
+        <a href="https://vnexpress.net/" class="logo" id="logo"><img src="assets/images/logo-150x29.png" alt="VnExpress" class="pc-only img-100" /></a>
+        <div class="block-right">
+          <a href="#box_comment" class="button-comments count_comment" data-target="">
+            <i class="fas fa-comment"></i>
+            <span class="counter">Bình luận</span>
+          </a>
+          <ul class="list-inline social">
+            <li>
+              <a href="javascript:void(0);" class="si-facebook shape-circle social-item fb_share" data-type="fb_share"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="javascript:void(0);" class="si-twitter shape-circle social-item tw_share" data-type="tw_share"><i class="fab fa-twitter"></i></a>
+            </li>
+          </ul>
+          <form action="https://timkiem.vnexpress.net/" method="get" class="block-right">
+            <div class="search">
+              <input autocomplete="off" type="text" class="search-input" placeholder="Tìm kiếm" maxlength="80" name="q" />
+              <span class="search-btn">
+                <button type="submit">
+                  <i class="fas fa-search"></i>
+                </button>
+              </span>
+            </div>
+          </form>
         </div>
       </div>
-      <!-- End Top Nav -->
-      <!-- Menu -->
-      <div class="mask-content"></div>
-      <div id="menu-box" class="menu-box" tabindex="5000">
-        <div class="box_width_common">
-          <div class="block_scoll_menu">
-            <ul class="list_item_panel">
-              <li>
-                <a href="https://vnexpress.net/"><i class="ic ic-m-home"></i>Trang chủ</a>
-              </li>
-              <li>
-                <a href="https://vnexpress.net/thoi-su"><i class="ic ic-m-news"></i>Thời sự</a>
-              </li>
-              <li>
-                <a href="https://vnexpress.net/goc-nhin"><i class="ic ic-m-opinion"></i>Góc nhìn</a>
-              </li>
-              <li>
-                <a href="https://vnexpress.net/the-gioi"><i class="ic ic-m-world"></i>Thế giới</a>
-              </li>
-              <li class="active">
-                <a href="https://vnexpress.net/kinh-doanh"><i class="ic ic-m-business"></i>Kinh doanh</a>
-              </li>
-              <li>
-                <a href="https://vnexpress.net/giai-tri"><i class="ic ic-m-entertainment"></i>Giải trí</a>
-              </li>
-              <li>
-                <a href="https://vnexpress.net/the-thao"><i class="ic ic-m-sport"></i>Thể thao</a>
-              </li>
-              <li>
-                <a href="https://vnexpress.net/phap-luat"><i class="ic ic-m-law"></i>Pháp luật</a>
-              </li>
-              <li>
-                <a href="https://vnexpress.net/giao-duc"><i class="ic ic-m-education"></i>Giáo dục</a>
-              </li>
-              <li>
-                <a href="https://vnexpress.net/suc-khoe"><i class="ic ic-m-health"></i>Sức khỏe</a>
-              </li>
-              <li>
-                <a href="https://vnexpress.net/doi-song"><i class="ic ic-m-family"></i>Đời sống</a>
-              </li>
-              <li>
-                <a href="https://vnexpress.net/du-lich"><i class="ic ic-m-travel"></i>Du lịch</a>
-              </li>
-              <li>
-                <a href="https://vnexpress.net/khoa-hoc"><i class="ic ic-m-science"></i>Khoa học</a>
-              </li>
-              <li>
-                <a href="https://vnexpress.net/so-hoa"><i class="ic ic-m-technology"></i>Số hóa</a>
-              </li>
-              <li>
-                <a href="https://vnexpress.net/oto-xe-may"><i class="ic ic-m-car"></i>Xe</a>
-              </li>
-              <li>
-                <a href="https://vnexpress.net/y-kien"><i class="ic ic-m-social"></i>Ý kiến</a>
-              </li>
-              <li>
-                <a href="https://vnexpress.net/tam-su"><i class="ic ic-m-talk"></i>Tâm sự</a>
-              </li>
-              <li>
-                <a href="https://video.vnexpress.net"><i class="ic ic-m-video"></i>Video</a>
-              </li>
-              <li>
-                <a href="https://vnexpress.net/anh"><i class="ic ic-m-photo"></i>Ảnh</a>
-              </li>
-              <li>
-                <a href="https://vnexpress.net/infographics"><i class="ic ic-m-infographic"></i>Infographics</a>
-              </li>
-              <li>
-                <a href="https://vnexpress.net/cuoi"><i class="ic ic-m-fun"></i>Cười</a>
-              </li>
-              <li>
-                <a href="https://raovat.vnexpress.net"><i class="ic ic-m-ecom"></i>Fsell</a>
-              </li>
-              <li>
-                <a href="https://vnexpress.net/24h-qua" class="bg_666"><i class="ic ic-m-24h"></i>24h qua</a>
-              </li>
-              <li>
-                <a href="https://vnexpress.net/lien-he-toa-soan/" class="bg_e8e8"><i class="ic ic-m-contact"></i>Liên hệ Tòa soạn</a>
-              </li>
-              <li class="end">
-                <a href="https://vnexpress.net/contact.htm" class="bg_e8e8"><i class="ic ic-m-mail"></i>Thông tin Tòa soạn</a>
-              </li>
-            </ul>
-            <div class="coppy_right_left width_common">
-              <i class="ic ic-caret-2-down"></i>
-              <div class="txt_coppy_right">
-                <p>&copy; Copyright 1997 - VnExpress.net, All rights reserved</p>
-                <p>&reg; VnExpress giữ bản quyền nội dung trên website này.</p>
-              </div>
-              <div class="txt_lienhe">
-                Hotline: <br />
-                <a href="tel:0838880123">083.888.0123 (Hà Nội)</a> <br />
-                <a href="tel:0822333555">082.233.3555 (TP HCM)</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="ascrail2000" class="nicescroll-rails">
-          <div class="vne-hr1"></div>
-        </div>
-        <div id="ascrail2000-hr" class="nicescroll-rails">
-          <div class="vne-hr2"></div>
-        </div>
-      </div>
-      <!-- End Menu -->
-      <!-- Main Content -->
-      <div class="section-content clearfix">
-        <div class="wrapper-content">
-          <div id="overlay"></div>
-          <div class="my_container">
-            <div class="cover">
-              <div class="cover-container">
-                <video id="cover-video" autoplay muted>
-                  <source type="video/mp4" src="assets/images/cover-video.mp4" />
-                  <!-- <source type="video/webm" src="https://tinyurl.com/y6q5jxr6" /> -->
-                </video>
-              </div>
-            </div>
-
-            <div class="car-detail">
-              <div class="car-slide-container">
-                <div class="list-img-model">
-                  <div class="hidden-logo"></div>
-                  <div class="status__icon for-mark-1"></div>
-                </div>
-                <!-- <div class="status__icon"></div> -->
-
-                <div id="slider-container" style="text-align: center">
-                  <input class="input-range" type="range" id="imageRange" min="1" max="200" step="1" value="1" />
-                  <div class="mark mark-1">
-                    <p>Đầu xe</p>
-                  </div>
-
-                  <div class="mark mark-2">
-                    <p>Thân xe</p>
-                  </div>
-                  <div class="mark mark-3">
-                    <p>Đuôi xe</p>
-                  </div>
-                  <div class="mark mark-4">
-                    <p>Nội thất</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="car-infor"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End Main Content -->
-
-      <!-- COMMENTS BOX -->
-      <!-- END COMMENTS BOX -->
     </div>
-    <!-- End Document Warpper -->
+    <!-- End Top Nav -->
+    <!-- Menu -->
+    <div class="mask-content"></div>
+    <div id="menu-box" class="menu-box" tabindex="5000">
+      <div class="box_width_common">
+        <div class="block_scoll_menu">
+          <ul class="list_item_panel">
+            <li>
+              <a href="https://vnexpress.net/"><i class="ic ic-m-home"></i>Trang chủ</a>
+            </li>
+            <li>
+              <a href="https://vnexpress.net/thoi-su"><i class="ic ic-m-news"></i>Thời sự</a>
+            </li>
+            <li>
+              <a href="https://vnexpress.net/goc-nhin"><i class="ic ic-m-opinion"></i>Góc nhìn</a>
+            </li>
+            <li>
+              <a href="https://vnexpress.net/the-gioi"><i class="ic ic-m-world"></i>Thế giới</a>
+            </li>
+            <li class="active">
+              <a href="https://vnexpress.net/kinh-doanh"><i class="ic ic-m-business"></i>Kinh doanh</a>
+            </li>
+            <li>
+              <a href="https://vnexpress.net/giai-tri"><i class="ic ic-m-entertainment"></i>Giải trí</a>
+            </li>
+            <li>
+              <a href="https://vnexpress.net/the-thao"><i class="ic ic-m-sport"></i>Thể thao</a>
+            </li>
+            <li>
+              <a href="https://vnexpress.net/phap-luat"><i class="ic ic-m-law"></i>Pháp luật</a>
+            </li>
+            <li>
+              <a href="https://vnexpress.net/giao-duc"><i class="ic ic-m-education"></i>Giáo dục</a>
+            </li>
+            <li>
+              <a href="https://vnexpress.net/suc-khoe"><i class="ic ic-m-health"></i>Sức khỏe</a>
+            </li>
+            <li>
+              <a href="https://vnexpress.net/doi-song"><i class="ic ic-m-family"></i>Đời sống</a>
+            </li>
+            <li>
+              <a href="https://vnexpress.net/du-lich"><i class="ic ic-m-travel"></i>Du lịch</a>
+            </li>
+            <li>
+              <a href="https://vnexpress.net/khoa-hoc"><i class="ic ic-m-science"></i>Khoa học</a>
+            </li>
+            <li>
+              <a href="https://vnexpress.net/so-hoa"><i class="ic ic-m-technology"></i>Số hóa</a>
+            </li>
+            <li>
+              <a href="https://vnexpress.net/oto-xe-may"><i class="ic ic-m-car"></i>Xe</a>
+            </li>
+            <li>
+              <a href="https://vnexpress.net/y-kien"><i class="ic ic-m-social"></i>Ý kiến</a>
+            </li>
+            <li>
+              <a href="https://vnexpress.net/tam-su"><i class="ic ic-m-talk"></i>Tâm sự</a>
+            </li>
+            <li>
+              <a href="https://video.vnexpress.net"><i class="ic ic-m-video"></i>Video</a>
+            </li>
+            <li>
+              <a href="https://vnexpress.net/anh"><i class="ic ic-m-photo"></i>Ảnh</a>
+            </li>
+            <li>
+              <a href="https://vnexpress.net/infographics"><i class="ic ic-m-infographic"></i>Infographics</a>
+            </li>
+            <li>
+              <a href="https://vnexpress.net/cuoi"><i class="ic ic-m-fun"></i>Cười</a>
+            </li>
+            <li>
+              <a href="https://raovat.vnexpress.net"><i class="ic ic-m-ecom"></i>Fsell</a>
+            </li>
+            <li>
+              <a href="https://vnexpress.net/24h-qua" class="bg_666"><i class="ic ic-m-24h"></i>24h qua</a>
+            </li>
+            <li>
+              <a href="https://vnexpress.net/lien-he-toa-soan/" class="bg_e8e8"><i class="ic ic-m-contact"></i>Liên hệ Tòa soạn</a>
+            </li>
+            <li class="end">
+              <a href="https://vnexpress.net/contact.htm" class="bg_e8e8"><i class="ic ic-m-mail"></i>Thông tin Tòa soạn</a>
+            </li>
+          </ul>
+          <div class="coppy_right_left width_common">
+            <i class="ic ic-caret-2-down"></i>
+            <div class="txt_coppy_right">
+              <p>&copy; Copyright 1997 - VnExpress.net, All rights reserved</p>
+              <p>&reg; VnExpress giữ bản quyền nội dung trên website này.</p>
+            </div>
+            <div class="txt_lienhe">
+              Hotline: <br />
+              <a href="tel:0838880123">083.888.0123 (Hà Nội)</a> <br />
+              <a href="tel:0822333555">082.233.3555 (TP HCM)</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="ascrail2000" class="nicescroll-rails">
+        <div class="vne-hr1"></div>
+      </div>
+      <div id="ascrail2000-hr" class="nicescroll-rails">
+        <div class="vne-hr2"></div>
+      </div>
+    </div>
+    <!-- End Menu -->
+    <!-- Main Content -->
+    <div class="section-content clearfix">
+      <div class="wrapper-content">
+        <div id="overlay"></div>
+        <div class="my_container">
+          <!-- Button trigger modal -->
+          <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#detail-car">
+            Launch demo modal
+          </button> -->
+          <!-- Modal -->
+          <div class="modal fade" id="detail-car" tabindex="-1" aria-labelledby="detail-car" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Phần đầu xe</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="modal-container">
+                    <div class="detail-car-item item-detail-1 item-detail-show">
+                      <div class="swiper swiper-1 ">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide"><img src="assets/images/head-1.jpg" alt="" class="img"></div>
+                          <div class="swiper-slide"><img src="assets/images/head-2.jpg" alt="" class="img"></div>
+                          <div class="swiper-slide"><img src="assets/images/head-3.jpg" alt="" class="img"></div>
+                          <div class="swiper-slide"><img src="assets/images/head-4.jpg" alt="" class="img"></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                      </div>
+                      <p>
+                        VinFast VF8 vẫn giữ nguyên thiết kế dải đèn LED ban ngày ôm trọn logo chữ “V” tương tự các dòng xe xăng & xe điện VFe34, dễ dàng nhận diện từ xa phía đằng trước cả ban ngày & ban đêm.</p>
+                      <h3>Phần đầu xe tích hợp các chức năng:</h3>
+                      <ul class="func-car">
+                        <li> Đèn chiếu sáng ban ngày, Đèn sương mù, Đèn chiếu góc, Đèn chờ, dẫn đường (LED), Đèn chào mừng</li>
+                        <li> Đèn pha: Dạng Led, Tự động bật tắt và điều chỉnh góc chiếu thông minh</li>
+                        <li> Kính chắn gió chống tia UV, Gạt mưa trước tự động.Gương chiếu hậu: Chỉnh / gập điện, Tự động chỉnh khi lùi và nhớ vị trí, Tích hợp:</li>
+                        <li> Gương chiếu hậu: Chỉnh / gập điện, Tự động chỉnh khi lùi và nhớ vị trí, Tích hợp:</li>
+                        <li> Camera tích hợp trên gương chiếu hậu, mặt ca lăng</li>
+                      </ul>
+                     
+                    </div>
 
-    <!-- Core Script -->
-    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
-    <script type="text/javascript" src="assets/js/jquery.migrate.min.js"></script>
-    <!-- <script type="text/javascript" src="assets/js/header-sticky.min.js"></script> -->
-    <script type="text/javascript" src="assets/js/jquery.nicescroll.min.js"></script>
-    <script type="text/javascript" src="assets/js/lib.min.js"></script>
-    <!-- End Core Script -->
 
-    <script type="text/javascript" src="assets/js/aos.js"></script>
-    <script type="text/javascript" src="assets/js/imagesStatus.min.js"></script>
-    <script type="text/javascript" src="assets/js/swiper.min.js"></script>
-    <script type="text/javascript" src="assets/js/main.min.js"></script>
-    <script>
-      AOS.init({ offset: 120, duration: 3000 });
-      document.querySelectorAll("img").forEach((img) => img.addEventListener("load", () => AOS.refresh()));
-    </script>
-  </body>
+                    <div class="detail-car-item item-detail-2">
+                      <div class="swiper swiper-2 ">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide"><img src="assets/images/body-1.jpg" alt="" class="img"></div>
+                          <div class="swiper-slide"><img src="assets/images/body-2.jpg" alt="" class="img"></div>
+                          <div class="swiper-slide"><img src="assets/images/body-3.jpg" alt="" class="img"></div>
+
+                        </div>
+                        <div class="swiper-pagination"></div>
+                      </div>
+                      <p>
+                        Xe điện VF8 là sự kết hợp ăn ý giữa kiểu dáng SUV và Coupe với đường vuốt cong từ phần mái ở trụ C, tạo nên những đường nét mềm mại nhưng cũng không kém phần mạnh mẽ, năng động. Đây cũng là phong cách thiết kế phổ biến được các nhà sản xuất ưu ái cho phương tiện sử dụng động cơ điện góp phần tối ưu không gian cho hệ thống pin ô tô.</p>
+
+
+                    </div>
+
+                    <div class="detail-car-item item-detail-3">
+                      <div class="swiper swiper-3 ">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide"><img src="assets/images/back-1.jpg" alt="" class="img"></div>
+                          <div class="swiper-slide"><img src="assets/images/back-2.jpg" alt="" class="img"></div>
+
+                        </div>
+                        <div class="swiper-pagination"></div>
+                      </div>
+                      <ul class="func-car">
+                        <li>Phần kính cửa sổ và viền cửa sổ: Chỉnh điện lên/ xuống một chạm 4 cửa, kính cửa sổ riêng tư màu đen, viền cửa số thép sáng. Kiểu cửa sổ: Hàng ghế trước kính cách âm 2 lớp, Hàng ghế sau kính 1 lớp.</li>
+                        <li> Nẹp cửa: Mạ crom, riêng bản Plus có bậc lên xuống.</li>
+                        <li> LaZang: Hợp kim 19 inch (Eco), 20 inch (Plus)</li>
+                        <li> Awngten: Vây cá mập</li>
+                        <li> Đèn hậu: Led, đèn sương mù sau.</li>
+                        <li> Camera 360: Tích hợp trên cốp sau.</li>
+                      </ul>
+
+                    </div>
+
+                    <div class="detail-car-item item-detail-4">
+                      <div class="swiper swiper-4 ">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide"><img src="assets/images/nt-1.jpg" alt="" class="img"></div>
+                          <div class="swiper-slide"><img src="assets/images/nt-2.jpg" alt="" class="img"></div>
+                          <div class="swiper-slide"><img src="assets/images/nt-3.jpg" alt="" class="img"></div>
+                          <div class="swiper-slide"><img src="assets/images/nt-4.jpg" alt="" class="img"></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                      </div>
+                      <ul class="func-car">
+                        <li>VF 8 có thiết kế 5 chỗ ngồi 2 hàng ghế thoải mái, đáp ứng nhu cầu sử dụng của một gia đình hoặc hành khách cùng đồng hành. Ngoài ra, ghế lái của VinFast VF 8 Eco có khả năng chỉnh điện 8 hướng và bản Plus chỉnh điện 12 hướng. Cả ghế phụ và ghế lái đều tích hợp hệ thống sưởi đa năng.
+
+                        </li>
+                        <li> Điểm độc đáo của VF 8 phải kể đến không gian khoang lái với cụm vô lăng và bảng taplo hiện đại. Cụm đồng hồ thông tin lái được thay thế bằng màn hình HUD và tích hợp cùng với màn hình giải trí trung tâm kích thước 15,6 inch, đồng thời tối giản các nút bấm vật lý giúp người dùng dễ dàng theo dõi thông tinh hành trình và điều chỉnh các tính năng theo nhu cầu.</li>
+
+                      </ul>
+
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="cover">
+
+            <div class="cover-container">
+              <video id="cover-video" autoplay muted>
+                <source type="video/mp4" src="assets/images/cover-video.mp4" />
+                <!-- <source type="video/webm" src="https://tinyurl.com/y6q5jxr6" /> -->
+              </video>
+            </div>
+          </div>
+
+          <div class="car-detail">
+            <div class="car-slide-container">
+              <div class="list-img-model">
+                <div class="hidden-logo"></div>
+                <div class="status__icon for-mark-1" modalContent="1"></div>
+                <div class="status__icon for-mark-2" modalContent="2"></div>
+                <div class="status__icon for-mark-3" modalContent="3"></div>
+                <div class="status__icon for-mark-4" modalContent="4"></div>
+              </div>
+              <!-- <div class="status__icon"></div> -->
+
+              <div id="slider-container" style="text-align: center">
+                <input class="input-range" type="range" id="imageRange" min="1" max="200" step="1" value="1" />
+                <div class="mark mark-1">
+                  <p>Đầu xe</p>
+                </div>
+
+                <div class="mark mark-2">
+                  <p>Thân xe</p>
+                </div>
+                <div class="mark mark-3">
+                  <p>Đuôi xe</p>
+                </div>
+                <div class="mark mark-4">
+                  <p>Nội thất</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="car-infor">
+              <h3>VINFAST VF8</h3>
+              <h2>THÔNG SỐ XE</h2>
+              <h4>Các thông tin sản phẩm có thể thay đổi mà không cần báo trước</h4>
+              <!-- <div class="line"></div> -->
+              <div class="car-info-detail-container">
+                <div class="col-left col-detail">
+                  <div class="info-item">
+                    <h5>Dài x Rộng x Cao</h5>
+                    <p>4750mm x 1934mm x 1667mm</p>
+                  </div>
+                  <div class="info-item">
+                    <h5>Chiều dài cơ sở</h5>
+                    <p>2.950mm</p>
+                  </div>
+                  <div class="info-item">
+                    <h5>Khoảng sáng gầm</h5>
+                    <p>179 mm</p>
+                  </div>
+                  <div class="info-item">
+                    <h5>Số ngồi</h5>
+                    <p> 5 chỗ</p>
+                  </div>
+                  <div class="info-item">
+                    <h5>Màn hình giải trí cảm ứng</h5>
+                    <p>15.6 inch<br>
+                    </p>
+                  </div>
+                  <div class="info-item">
+                    <h5>Lọc không phí trong Cabin</h5>
+                    <p> Combi 1.0<br>
+                    </p>
+                  </div>
+                </div>
+                <div class="col-left col-detail">
+                  <div class="info-item">
+                    <h5>Động cơ</h5>
+                    <p> 2 Motor (Loại 150 kW)</p>
+                  </div>
+                  <div class="info-item">
+                    <h5>Công suất tối đa (kW)</h5>
+                    <p>260 tương đương 349 hp</p>
+                  </div>
+                  <div class="info-item">
+                    <h5>Mô men xoắn cực đại</h5>
+                    <p> 500</p>
+                  </div>
+                  <div class="info-item">
+                    <h5>Khả năng tăng tốc từ 0-100km/h (s)</h5>
+                    <p>6.5</p>
+                  </div>
+                  <div class="info-item">
+                    <h5>Dẫn động</h5>
+                    <p>AWD / 2 cầu toàn thời gian</p>
+                  </div>
+                  <div class="info-item">
+                    <h5>Chế độ lái</h5>
+                    <p> Eco / Normal</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Main Content -->
+
+    <!-- COMMENTS BOX -->
+    <!-- END COMMENTS BOX -->
+  </div>
+  <!-- End Document Warpper -->
+
+  <!-- Core Script -->
+  <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/js/jquery.migrate.min.js"></script>
+  <!-- <script type="text/javascript" src="assets/js/header-sticky.min.js"></script> -->
+  <script type="text/javascript" src="assets/js/jquery.nicescroll.min.js"></script>
+  <script type="text/javascript" src="assets/js/lib.min.js"></script>
+  <!-- End Core Script -->
+  <script type="text/javascript" src="assets/js/aos.js"></script>
+  <script type="text/javascript" src="assets/js/imagesStatus.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="assets/js/main.min.js"></script>
+  <script>
+    AOS.init({ offset: 120, duration: 3000 });
+    document.querySelectorAll("img").forEach((img) => img.addEventListener("load", () => AOS.refresh()));
+  </script>
+</body>
+
 </html>
